@@ -1,0 +1,32 @@
+#content div{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+
+}
+#content div .bekezdes{
+    width: 100%;
+}
+#content div .bekezdes .kep{
+    width: 100%;
+}
+
+#content div .bekezdes .kep img{
+    width: 100%;
+    padding: 5px;
+}
+#content div .bekezdes .tartalom p{
+    text-align: justify;
+}
+
+#content div .bekezdes .tartalom{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* #content{
+    display: flex;
+    flex-direction: column;
+     justify-content: center; 
+    align-items: center;
+}*/

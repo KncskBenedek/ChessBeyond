@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #ddd;
+}
+
+header img {
+  width: 100%;
+}
+
+main{
+  margin: auto;
+  width: 1500px;
+}

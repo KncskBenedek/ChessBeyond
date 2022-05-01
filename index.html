@@ -1,94 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chess Beyond</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="mindenre/nav.css" />
 
-    <style>
-      .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-      }
-    </style>
-    <script src="fooldal.js"></script>
-    <script src="mindenre/navScroll.js"></script>
-    <link rel="stylesheet" href="fooldal.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chess Beyond</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet" />
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"></script>
+  <link rel="stylesheet" href="mindenre/nav.css" />
 
-  <body>
-    <main>
-      <header>
-        <img src="kepek/header.png" alt="fokep" />
-      </header>
+  <style>
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+  </style>
+  <script src="fooldal.js"></script>
+  <link rel="stylesheet" href="fooldal.css" />
+</head>
 
-      <div class="navbar" id="navbarID">
-        <a href="index.html">Home</a>
+<body>
+  <main>
+    <header>
+      <img src="kepek/header.png" alt="fokep" />
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarLeftAlignExample" aria-controls="navbarLeftAlignExample" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
 
-        <div class="dropdown">
-          <button class="dropbtn">
-            News
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">Patch notes</a>
-            <a href="#">Events</a>
-          </div>
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarLeftAlignExample">
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link disabled">Chess BeYond</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+
+            <!-- Navbar dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+                aria-expanded="false">
+                News
+              </a>
+              <!-- Dropdown menu -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">Patch notes</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Events</a>
+                </li>
+              </ul>
+            </li>
+
+
+            <!-- Navbar dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+                aria-expanded="false">
+                How to play
+              </a>
+              <!-- Dropdown menu -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">Mechanics</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Tutorials</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Downdload</a>
+                </li>
+              </ul>
+            </li>
+
+
+            <!-- Navbar dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+                aria-expanded="false">
+                Community
+              </a>
+              <!-- Dropdown menu -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">Blog</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Join the cult</a>
+                </li>
+              </ul>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+
+
+            <!-- Navbar dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+                aria-expanded="false">
+                Shop
+              </a>
+              <!-- Dropdown menu -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">NFT & Crypto currency</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Merch</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Ingame accessories</a>
+                </li>
+              </ul>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+            
+            
+          </ul>
         </div>
-        
-        <div class="dropdown">
-          <div class="dropdown">
-            <button class="dropbtn">
-              How to play
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">Mechanics & combos</a>
-              <a href="#">Tutorial</a>
-              <a href="#">Download</a
-              ><!--megvitandó hogy jó helyen van-->
-            </div>
-          </div>
-        </div>
-        <div class="dropdown">
-          <div class="dropdown">
-            <button class="dropbtn">
-              Community
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">Blog</a>
-              <a href="#">Join the cult</a>
-            </div>
-          </div>
-        </div>
-        <a href="#">Contact</a>
-        <div class="dropdown">
-          <button class="dropbtn">
-            Shop
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">NFT & Crypto currency</a>
-            <a href="#">Merch</a>
-            <a href="#">In-game</a>
-          </div>
-        </div>
-        <a href="#">FAQ</a>
       </div>
+    </nav>
+    <article id="content"></article>
+    <footer>
+      <p>©Copyright</p>
+      <p>Made by: Koncsik Benedek, Kovács Milán, Ódor Norbert</p>
+    </footer>
+  </main>
+</body>
 
-      <article id="content"></article>
-      <footer>
-        <p>©Copyright</p>
-        <p>Made by: Koncsik Benedek, Kovács Milán, Ódor Norbert</p>
-      </footer>
-    </main>
-  </body>
 </html>

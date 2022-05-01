@@ -14,9 +14,9 @@ function beilleszt() {
                 let tartalom = "";
                 ID("content").innerHTML += `<div id="bekezd${n}"><\div>`;
                 
-                tartalom += `<div class="bekezdes"><div class="tartalom"><h2>${data.fooldal[key].cim}</h2>`;
+                tartalom += `<div class="tartalom"><h2>${data.fooldal[key].cim}</h2>`;
                 tartalom += `<p>${data.fooldal[key].tartalom}</p></div>`;
-                tartalom += `<div class="kep"><img src="kepek/${data.fooldal[key].kep}"></img></div></div>`
+                tartalom += `<img src="kepek/${data.fooldal[key].kep}" class="kep" alt="kep"></img>`
                 tomb.push(tartalom);
                 n++;
             }

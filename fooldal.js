@@ -1,9 +1,9 @@
-console.log("Belép a jsbe");
+//console.log("Belép a jsbe");
 window.addEventListener("load", beilleszt);
 
 
 function beilleszt() {
-    console.log("belép a beillesztbe");
+    //console.log("belép a beillesztbe");
     let n = 0;
     /* const objektum =  */
     fetch("fooldal.json")

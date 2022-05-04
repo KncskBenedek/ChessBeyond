@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name = "description" content = "Contact">
+<link rel  = "stylesheet" href = "formstyle.css">
   <title>Chess Beyond</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <!-- Font Awesome -->
@@ -15,11 +17,9 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet" />
   <!-- MDB -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"></script>
-  <link rel="stylesheet" href="mindenre/nav.css" />
 
-  <script src="fooldal.js"></script>
-  <link rel="stylesheet" href="fooldal.css" />
   <link rel="stylesheet" href="mindenre/mainStyle.css">
+  <link rel="stylesheet" href="mindenre/nav.css" />
 </head>
 
 <body>
@@ -102,7 +102,7 @@
                   <a class="dropdown-item" href="#">Blog</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="form.html">Join the cult</a>
+                  <a class="dropdown-item" href="#">Join the cult</a>
                 </li>
               </ul>
             </li>
@@ -146,7 +146,37 @@
         </div>
       </div>
     </nav>
-    <article id="content"></article>
+	<article>
+            <form action="Urlap.php" method="post">
+                <fieldset>
+                    <legend>Sign up!</legend>
+                    <label for="fname">First name: </label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last name: </label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="birthday">Date of bith: </label>
+                    <input type="date" id="birthday" name="birthday"><br><br>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="uname">Username: </label>
+                    <input type="uname" id="uname" name="uname"><br><br>
+                    <label for="pword">Password: </label>
+                    <input type="pword" id="pword" name="pword"><br><br>
+                    <label for="repword">Confirm Password: </label>
+                    <input type="repword" id="repword" name="repword"><br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Comments/Questions: </legend>   
+                    <textarea rows="5" cols="80"></textarea>
+                    <br>
+                </fieldset>
+                <input type="checkbox" id="arement1" name="arement1" value="agreed">
+                <label for="arement1"> I agree with terms and conditions</label><br>
+                <input type="checkbox" id="arement2" name="arement2" value="agreed">
+                <label for="arement2"> I want to receive the newsletter</label><br>
+                <h2><input type="submit" value="Submit" id="submit"></h2>
+            </form>
+    </article>
     <footer>
       <p>©Copyright</p>
       <p>Made by: Koncsik Benedek, Kovács Milán, Ódor Norbert</p>

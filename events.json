@@ -1,19 +1,19 @@
 {
   "fooldal": [
     {
-      "cim": "",
+      "cim": "E-sport",
       "tartalom": "",
-      "kep": ""
+      "kep": "worldCup.jpg"
     },
     {
-      "cim": "",
-      "tartalom": "",
-      "kep": ""
+      "cim": "Beyond IT!",
+      "tartalom": "riddim",
+      "kep": "beyondIt.png"
     },
     {
-      "cim": "",
-      "tartalom": "",
-      "kep": ""
+      "cim": "haha",
+      "tartalom": "hehe",
+      "kep": "school.jpg"
     }
   ]
 }

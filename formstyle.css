@@ -1,0 +1,113 @@
+@charset "UTF-8";
+main, header, footer, article, nav, h2 {
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 1000px;
+    display: grid;
+    grid-template-areas: "h h h h"
+                         "n n n n"
+                         "a a a a"
+                         "f f f f";
+    grid-gap: 10px;
+    margin: auto;
+    background-color: black;
+    color: white;
+}
+
+body {
+    margin: 0px;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    font-size: 13pt;
+}
+
+article {
+    grid-area: a;
+    padding-top: 30px;
+}
+
+footer {
+    grid-area: f;
+    text-align: center;
+}
+
+legend {
+    border: 2px solid white;
+    padding: 10px;
+}
+
+form {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+fieldset {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#submit {
+    width: 200px;
+    margin: auto;
+    font-size: 20px;
+    background-color: red;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+/*reszponzivitás*/
+
+@media screen and (max-width:600px){
+    main{
+        width: 100%;
+        display: grid;
+        grid-gap: 10px;
+        margin: auto;
+        background-color: black;
+        color: white;
+        grid-template-areas:
+            "h"
+            "n"
+            "a"
+            "d"
+            "f";
+    }
+
+    header {
+        margin: 15px;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        display:block; 
+    }
+
+    p{
+        font-size: 12px;
+        text-align: justify 
+
+    }
+
+    h1{
+        font-size: 40px
+    }
+
+    h2{
+        font-size: 30px
+    }
+
+    h3{
+        font-size: 20px
+    }
+
+    textarea {
+        width: 90%;
+    }
+
+    }
+ 

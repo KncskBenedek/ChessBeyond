@@ -4,12 +4,6 @@ main, header, footer, article, nav, h2 {
 }
 
 main {
-    max-width: 1000px;
-    display: grid;
-    grid-template-areas: "h h h h"
-                         "n n n n"
-                         "a a a a"
-                         "f f f f";
     grid-gap: 10px;
     margin: auto;
     background-color: black;

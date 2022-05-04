@@ -1,8 +1,5 @@
 //console.log("Belép a jsbe");
-window.addEventListener("load", beilleszt);
-
-
-function beilleszt() {
+window.addEventListener("load", function() {
     //console.log("belép a beillesztbe");
     let n = 0;
     /* const objektum =  */
@@ -24,9 +21,12 @@ function beilleszt() {
                 ID(`bekezd${index}`).innerHTML = tomb[index];
             }
         })
+        .catch(()=> {
+            console.log("Valami elszaródott");
+        });
 
 }
-
+);
 
 function ID(elem) {
     return document.getElementById(elem);

@@ -4,6 +4,7 @@ main, header, footer, article, nav, h2 {
 }
 
 main {
+    width: 1500px;
     grid-gap: 10px;
     margin: auto;
     background-color: black;
@@ -12,7 +13,7 @@ main {
 
 body {
     margin: 0px;
-    background-attachment: fixed;
+    background-color: black;
     font-family: 'Arial', sans-serif;
     font-size: 13pt;
 }
@@ -42,15 +43,34 @@ fieldset {
     margin-bottom: 10px;
 }
 
-#submit {
+.button, .button:visited {
     width: 200px;
     margin: auto;
     font-size: 20px;
     background-color: red;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-style: outset;
+    border-color: red;
 }
 
 h2 {
     text-align: center;
+}
+
+h1 {
+    text-align: center; 
+}
+
+h3 {
+    text-align: center;
+}
+
+img {
+    width: 100%;
 }
 
 
